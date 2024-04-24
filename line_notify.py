@@ -1,7 +1,7 @@
 import requests
 import sys
 lineUrl = "https://notify-api.line.me/api/notify"
-lineToken = "zFy9BEfHyFxkRj9fqzXPb7Xja2UTU9s3PAdHtzZLNYc"
+lineToken = "<你的權杖>"
 
 try:
     magnitude = str(sys.argv[1]).replace("+","強").replace("-","弱")
@@ -12,7 +12,7 @@ try:
         data = { 'message': msg }
         requests.post(lineUrl,headers = headers, data = data)
 
-    msg = "警告：地區預計震度" + str(magnitude) + "級地震\n預計到達時間:" + str(second) + "秒"
+    msg = "警告：XX地區預計震度" + str(magnitude) + "級地震\n預計到達時間:" + str(second) + "秒"
     
     lineWebhook(msg,lineToken)
     
