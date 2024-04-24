@@ -1,6 +1,17 @@
 # EEW_line_notify
 地震速報、速報軟件、line webhook推播、line webhook推送（配合地牛Wake Up!）
+
 由於地牛wake up!只能觸發*cmd*和*bat*，如果想要推送到其他軟體就要call到python
+
+```mermaid
+      graph LR
+      start[地震發生] --> input[地牛wakeup!被觸發]
+      input -- 觸發*exe.cmd.bat. --> conditionA{看自己選擇\n傳入變數:強度時間}
+      conditionA -- 分支:split\n傳入變數: 強度時間 --> conditionC{earthquick.bat}
+      conditionC -- 觸發\n傳入變數: 強度時間 --> conditionD{discord_notify.py} -- webhook post--> send[discord傳訊息]
+      send[discord傳訊息] --> stop[程式結束]
+```
+
 
 # 使用說明
 ## 第一步 架設python環境，請確保系統環境變數中有python路徑(PATH)
@@ -17,6 +28,7 @@
 <img src="https://user-images.githubusercontent.com/24865458/208755758-9a057691-c583-4012-bf63-9d48c711451f.png" width="50%">
 
 ## 第三步 下載zip解壓縮在想要的路徑
+<img src="https://github.com/brianoy/EEW_line_notify/assets/24865458/ae1b92bf-d1e7-4e40-a6d6-18b882c21690" width="50%">
 
 ## 第四步 在地牛wake up!中選擇剛剛下載的earthquick.bat路徑
 <img src="https://user-images.githubusercontent.com/24865458/208751019-a2ca4838-1839-4e55-9cf6-a49853e98d78.png" width="50%">
