@@ -7,8 +7,8 @@
 *(不示範)*
 *推薦python版本: 3.12.2*
 
-## 第二步 獲取line notify token
-點擊：https://notify-bot.line.me/my/
+## 第二步 取得line notify token
+取得連結：https://notify-bot.line.me/my/
 ### 登入後選擇發行權杖
 <img src="https://user-images.githubusercontent.com/24865458/208755580-4528b3be-7822-4c0c-a9ca-95b10f9ffeb9.png" width="50%">
 
@@ -23,13 +23,19 @@
 
 ## 第五步 在line_notify.py中填入剛剛在line notify 申請的權杖
 ```XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX```
-<img src="https://user-images.githubusercontent.com/24865458/208754014-784e5bfe-151e-46d2-ba62-eaa5f1ff1ba0.png" width="50%">
+
+<img src="https://github.com/brianoy/EEW_line_notify/assets/24865458/a5bec1a2-00e1-488b-acc9-da80296dbc98" width="50%">
 
 ## 第六步 按自己的需求調整訊息傳送內容
+<img src="https://github.com/brianoy/EEW_line_notify/assets/24865458/f4f8639e-a8fc-47cf-be41-d501b1fdb5fc" width="50%">
 
 
 ## 第七步 按下地牛wake up!中的測試按鍵
 *建議先在自己的聊天室測試，免得嚇到朋友了*
+
+<img src="https://github.com/brianoy/EEW_line_notify/assets/24865458/82ff5033-dc27-421b-82d2-10eccf5817ef" width="50%">
+<img src="https://github.com/brianoy/EEW_line_notify/assets/24865458/f2059549-df99-4374-9258-e33c011c92b1" width="50%">
+
 
 # 常見QA
 1) 可不可以將bat和py檔案分在不同地方
