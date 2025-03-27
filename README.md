@@ -1,4 +1,6 @@
 # EEW_line_notify
+**在2025 年3 月31 日LINE notify 已正式終止服務**
+
 地震速報、速報軟件、line webhook推播、line webhook推送（配合地牛Wake Up!）
 
 由於地牛wake up!只能觸發*cmd*和*bat*，如果想要推送到其他軟體就要call到python
